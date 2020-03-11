@@ -4,7 +4,8 @@ import "./products.css";
 import Currency from "../../Helpers/currency";
 import Image from "react-graceful-image";
 
-function Index({ product, addFunc }) {
+function Index(props) {
+  const { product, addFunc } = props;
   return (
     <div className="car__Cards">
       <div className="card mb-4 mt-3">

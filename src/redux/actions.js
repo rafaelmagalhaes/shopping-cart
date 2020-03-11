@@ -5,7 +5,6 @@ export const RECEIVE_PRODUCTS = "RECEIVE_PRODUCTS";
 export const SET_CART_ITEMS = "SET_CART_ITEMS";
 export const EMPTY_CART = "EMPTY_CART";
 export const REMOVE_PRODUCT = "REMOVE_PRODUCT";
-export const INCREASE_UNIT = "INCREASE_UNIT";
 
 const requestProducts = () => {
   return {
@@ -31,13 +30,6 @@ const deleteCart = () => {
     type: EMPTY_CART
   };
 };
-const increateUnit = val => {
-  return {
-    type: INCREASE_UNIT,
-    unit: val
-  };
-};
-
 const removeProduct = index => {
   return {
     type: REMOVE_PRODUCT,
@@ -106,7 +98,7 @@ export const clearCart = () => {
   };
 };
 export const deleteProduct = index => {
-  return (dispatch, getState) => {
+  return dispatch => {
     dispatch(removeProduct(index));
   };
 };
