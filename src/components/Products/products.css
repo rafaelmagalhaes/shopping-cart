@@ -1,0 +1,54 @@
+.car__Cards {
+    transition: box-shadow 0.5s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.car__Cards:hover {
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.car__Cards .card {
+    height: 100%;
+}
+
+.car__Cards .card-title {
+    font-size: 19px;
+}
+
+.car__Cards img {
+    padding-top: 1rem;
+    height: 230px;
+    object-fit: contain;
+}
+
+.car__cards__href {
+    cursor: pointer;
+    color: black;
+}
+
+.car__cards__href:hover {
+    color: black;
+}
+
+.img-overlay .card-title {
+    margin-left: 1.25rem /* make sure card-title is aligned with the card-body*/
+}
+
+.img-hover {
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-hover img {
+    transition: transform 2s, filter 1.3s ease-in-out;
+    transform-origin: center center;
+    transform: scale(0.8);
+
+}
+
+.img-hover:hover img {
+    transform: scale(1);
+}
