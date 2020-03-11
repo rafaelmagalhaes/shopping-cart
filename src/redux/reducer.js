@@ -17,7 +17,6 @@ const products = (
   state = {
     isFetching: false,
     products: [],
-    product: {},
     cart: []
   },
   action
